@@ -5,7 +5,9 @@ type action = Dispatch<SetStateAction<string>>;
 
 const AlertControl = () => {
   function alertText(setInputValue: action, value: string) {
-    alert(value);
+    if(value) {
+     alert(value);
+    }
   }
 
   function alertIsNumder(setInputValue: action, value: string) {
